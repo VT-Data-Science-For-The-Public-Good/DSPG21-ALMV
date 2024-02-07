@@ -55,7 +55,7 @@ colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a
     # Pull polygons from tigris
     options(tigris_use_cache = TRUE)
     puma_geoms_list <- lapply(state_list, function(x) {
-      pumas(state = x, cb = T)
+      pumas(state = x, cb = T,year = 2019)
     })
     puma_geoms <- rbind_tigris(puma_geoms_list)
     
@@ -112,7 +112,7 @@ jscode <- "function getUrlVars() {
            var x = document.getElementsByClassName('navbar-brand');
 
            if (mytype != 'economic') {
-             x[0].innerHTML = '<div style=\"margin-top:-14px\"><a href=\"https://datascienceforthepublicgood.org/events/symposium2020/poster-sessions\">' +
+             x[0].innerHTML = '<div style=\"margin-top:-14px\"><a href=\"https://datascienceforthepublicgood.org/events/dspg2021/postersessions\">' +
                               '<img src=\"DSPG_black-01.png\", alt=\"DSPG 2020 Symposium Proceedings\", style=\"height:42px;\">' +
                               '</a></div>';
 
